@@ -1,0 +1,17 @@
+<!--收藏列表-->
+<view class='container'>
+  <view class='list'>
+    <navigator class="goodsinfo" hover-class='none' url='/pages/goods_show/goods_show' wx:for="{{collectionlist}}">
+      <view class="goodsimg">
+        <image mode="aspectFill" src="{{item.img}}"></image>
+      </view>
+      <view class="goodsin">
+        <view class="title">{{item.name}}</view>
+        <view class="type">{{item.model}} {{item.classify}}</view>
+        <view class="pricenumber">
+          <text class="price">￥{{item.vipprice}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

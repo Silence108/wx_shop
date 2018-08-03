@@ -1,0 +1,84 @@
+/* pages/sellerinfo/sellerinfo.wxss */
+.head {
+  width: 100%;
+  height: 265rpx;
+  position: relative;
+  display: block;
+}
+.head .headimg {
+  position: absolute;
+  top: 48rpx;
+  left: 285rpx;
+}
+.head .headimg image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: rgba(255, 255, 255, 0.4) solid 12rpx;
+}
+.headinfo {
+  display: flex;
+  background: #fff;
+  padding: 14rpx 24rpx;
+  border-bottom: #dfdfdf solid 1rpx;
+}
+.headinfo .img image {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.headinfo .info {
+  font-size: 30rpx;
+  margin-top: 24rpx;
+}
+.headinfo .info .id {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 5rpx;
+}
+.menu {
+  background-color: #fff;
+  padding: 0 24rpx;
+  /* height: 80rpx; */
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+.box {
+  display: flex;
+}
+.box .icon {
+  width: 33rpx;
+  height: 33rpx;
+  margin-right: 10rpx;
+  margin-top: 24rpx;
+  display: inline-block;
+}
+.box .txt {
+  display: inline-block;
+  line-height: 80rpx;
+}
+.menu.address .box .txt {
+  line-height: 40rpx;
+  width: 650rpx;
+  padding: 10rpx 0;
+}
+.infobox {
+  background: #fff;
+  margin-top: 8rpx;
+  padding: 24rpx;
+  font-size: 32rpx;
+}
+.infobox .imglist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infobox .imglist image {
+  width: 230rpx;
+  height: 200rpx;
+  margin: 10rpx 5rpx 0 0;
+}

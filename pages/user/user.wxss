@@ -1,0 +1,105 @@
+/* 个人中心 */
+.headinfo {
+  text-align: center;
+  background-color: #d33b27;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+  height: 196rpx;
+}
+.headinfo::after {
+  content: '';
+  width: 110%;
+  height: 198rpx;
+  position: absolute;
+  background: #fff;
+  left: -5%;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  z-index: 1
+}
+.headinfo .headimg {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  z-index: 2;
+  top: 10rpx;
+  left: 308rpx;
+  position: absolute;
+  border: rgba(255, 255, 255, 0.6) solid 10rpx;
+}
+.headinfo .info {
+  color: #333;
+  font-size: 28rpx;
+  /* margin-left: 24rpx; */
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  top: 148rpx;
+  left: 0;
+  width: 100%;
+}
+.headinfo .info .username {
+  font-size: 40rpx;
+  margin: 16rpx 0;
+}
+
+.order {
+  background-color: #fff;
+  /* margin-top: 10rpx; */
+  margin-bottom: 15rpx;
+  border-top: #dfdfdf solid 1rpx;
+}
+.order .all {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24rpx;
+  line-height: 80rpx;
+  border-top: #dfdfdf solid 1rpx;
+  font-size: 28rpx;
+  position: relative;
+}
+.order .order_flex {
+  display: flex;
+  justify-content: space-around;
+  font-size: 26rpx;
+  text-align: center;
+  padding: 24rpx 10rpx;
+}
+.order .order_flex .item {
+  width: 100%;
+  border-right: #dfdfdf solid 1rpx;
+}
+.order .order_flex .item:last-child {
+  border: none;
+}
+.order .order_flex .item image {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.menu {
+  background-color: #fff;
+  padding: 0 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
+  font-size: 28rpx;
+  position: relative;
+}
+.box {
+  display: flex;
+}
+.box .icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+  margin-top: 24rpx;
+  display: inline-block;
+}
+.box .txt {
+  display: inline-block;
+  line-height: 80rpx;
+}

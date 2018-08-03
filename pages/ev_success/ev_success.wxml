@@ -1,0 +1,52 @@
+<!--评价成功-->
+<view class='container'>
+  <image class='success_bg' src='/images/u41.png'>
+    <view class='t1'>感谢您的评价</view>
+    <view class='t2'>如赠玫瑰人 后者有余香</view>
+  </image>
+  <view class="order" wx:for="{{orderlist}}" wx:key="{{index}}">
+    <navigator url="/pages/orderdetails/orderdetails?uuid={{item.uuid}}" hover-class="none">
+      <view class="ordernumber">
+        <view class="number">订单编号：{{item.ordnum}}</view>
+        <!-- <view class="status active">{{item.status}}</view> -->
+      </view>
+      <view class="goodsinfo">
+        <view class="goodsimg">
+          <image mode="aspectFill" src="{{item.img}}"></image>
+        </view>
+        <view class="goodsin">
+          <view class="title">{{item.name}}</view>
+          <view class="type">{{item.model}} {{item.classify}}</view>
+          <view class="pricenumber">
+            <text class="price">￥{{item.vipprice}}</text>
+            <text class="number">x{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="goodsprice">
+        合计:<text class="totalprice">￥{{item.total}}</text><text>运费：{{item.freight == '' ? '包邮': '￥'+item.freight}}</text>
+      </view>
+    </navigator>
+    <view class="action" wx:if="{{item.status == '待付款'}}">
+      <view class="cancel" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">取消订单</view>
+      <view class="cancel red" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">立即支付</view>
+    </view>
+    <view class="action" wx:if="{{item.status == '待发货'}}">
+      <view class="cancel red" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">联系客服</view>
+    </view>
+    <view class="action" wx:elif="{{item.status == '待收货'}}">
+      <view class="cancel red" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">确认收货</view>
+    </view>
+    <view class="action" wx:elif="{{item.status == '待评价'}}">
+      <view class="cancel" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">删除订单</view>
+      <view class="cancel red" data-value="{{item.uuid}}" data-id="4" bindtap="changeStatus">晒图评价</view>
+    </view>
+    <view class="action" wx:elif="{{item.status == '交易成功'}}">
+      <view class="cancel" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">删除订单</view>
+      <view class="cancel" data-value="{{item.uuid}}" data-id="4" bindtap="changeStatus">追加评论</view>
+    </view>
+    <view class="action" wx:elif="{{item.status == '交易关闭'}}">
+      <view class="cancel" data-value="{{item.uuid}}" data-id="" bindtap="changeStatus">删除订单</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--商品列表-->
+<import src="/templates/goodslist.wxml" />
+<view class='continar'>
+  <view class='tab'>
+    <view class='item active'>综合</view>
+    <view class='item'>销量</view>
+    <view class='item price'>价格</view>
+  </view>
+  <view class='goodslist'>
+    <template is="goodsList" />
+  </view>
+</view>
+

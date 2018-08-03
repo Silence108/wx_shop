@@ -1,0 +1,18 @@
+<!--搜索页面-->
+<view class='container'>
+  <view class='searchbox'>
+    <view class='searchbg'><image src='/images/search@2x.png'></image><input placeholder='搜索商品' placeholder-class='input_place'></input> <image src='/images/del@2x.png'></image> </view>
+  </view>
+  <view class='attr'>
+    <view class='txt'>最近搜索</view><image src='/images/shanchu@2x.png'></image>
+  </view>
+  <view class='itembox'>
+    <view class='item'>乐事薯条</view><view class='item'>爆米花</view><view class='item'>毛呢外套</view><view class='item'>打底裤</view> <view class='item'>薯条</view><view class='item'>爆米花</view><view class='item'>毛呢外套</view><view class='item'>打底裤</view>
+  </view>
+  <view class='attr'>
+    <view class='txt'>历史搜索</view>
+  </view>
+  <view class='itembox'>
+    <view class='item'>乐事薯条</view><view class='item'>爆米花</view><view class='item'>毛呢外套</view><view class='item'>打底裤</view> <view class='item'>薯条</view><view class='item'>爆米花</view><view class='item'>毛呢外套</view><view class='item'>打底裤</view>
+  </view>
+</view>

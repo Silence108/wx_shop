@@ -1,0 +1,40 @@
+<!--商家资料-->
+<view class='container'>
+  <image class='head' src='/images/u2.png' mode='aspectFill'>
+    <view class='headimg'>
+      <image src='http://img0.imgtn.bdimg.com/it/u=4180413995,1114631528&fm=214&gp=0.jpg'></image>
+    </view> 
+  </image>
+  <view class='headinfo'>
+    <view class='img'>
+      <image src='http://img0.imgtn.bdimg.com/it/u=4180413995,1114631528&fm=214&gp=0.jpg'></image>
+    </view>
+    <view class='info'>
+      <view class='name'>美特好</view>
+      <view class='id'>ID:789561252</view>
+    </view>
+  </view>
+  <view class='menu'>
+    <view class='box'><image class='icon' src='/images/u1.png'></image><span class='txt'>营业时间：8:00-20:00</span></view>
+  </view>
+  <view class='menu'>
+    <view class='box'><image class='icon' src='/images/u3.png'></image><span class='txt'>联系电话：1689563249</span></view>
+  </view>
+  <view class='menu'>
+    <view class='box'><image class='icon' src='/images/u4.png'></image><span class='txt'>微信号：2276060849</span></view>
+  </view>
+  <view class='menu'>
+    <view class='box'><image class='icon' src='/images/u5.png'></image><span class='txt'>QQ号：2689561665</span></view>
+  </view>
+  <view class='menu address'>
+    <view class='box'><image class='icon' src='/images/u6.png'></image><span class='txt'>店铺地址：山西省太原市小店区许坦东街锦东国际商务中心A座28层。</span></view>
+  </view>
+  <view class='infobox'>
+    <view class='tit'>商家信息</view>
+    <view class='imglist'>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515235769366&di=639d27a107f0ca0e665fb42f6a850724&imgtype=0&src=http%3A%2F%2Fupload.ct.youth.cn%2F2015%2F0709%2F1436400167113.jpg'></image>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515235769366&di=639d27a107f0ca0e665fb42f6a850724&imgtype=0&src=http%3A%2F%2Fupload.ct.youth.cn%2F2015%2F0709%2F1436400167113.jpg'></image>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515235769366&di=639d27a107f0ca0e665fb42f6a850724&imgtype=0&src=http%3A%2F%2Fupload.ct.youth.cn%2F2015%2F0709%2F1436400167113.jpg'></image>
+    </view>
+  </view>
+</view>

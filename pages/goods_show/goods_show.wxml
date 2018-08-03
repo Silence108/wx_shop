@@ -1,0 +1,124 @@
+<!--商品详情-->
+<import src="/wxParse/wxParse.wxml"/>
+<view class="container">
+  <swiper class="banner" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}"
+autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <navigator class="banneritem" url="" hover-class="none">
+          <image mode="aspectFill" src="{{item}}" class="slide-image"/>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="goodsinfo">
+    <text class="title">{{title}}</text>
+    <view class="priceinfo">
+      <view class="price">
+        <text class="now_price">￥{{nowprice}}</text>
+        <text class="old_price">原价{{oldprice}}</text>
+      </view>
+      <view class="freight">10人购买</view>
+      <!-- <text class="freight"></text> -->
+    </view>
+  </view>
+  <view class="goodstype">
+    <view class="checkinfo" bindtap='chooseType'>
+      <text class="ch_info">已选 {{modelactive}}{{typeactive}}\t{{num}}件</text>
+      <view class="jiantou">
+        <image src="/images/jiantou@2x.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="goodsshow">
+    <view class="goodsshowtab tab" bindtap='tabChange'>
+      <view class="item {{Tab == 0 ? 'active':''}}" data-value='0'>商品详情</view>
+      <view class="item {{Tab == 1 ? 'active':''}}" data-value='1'>商品参数</view>
+      <view class="item {{Tab == 2 ? 'active':''}}" data-value='2'>用户评价</view>
+    </view>
+    <swiper class='goodsL' bindchange='swiperChange' current='{{current}}'>
+      <swiper-item>
+        <view class="cotent">
+          <image style="width:743rpx;height:947rpx;" src='https://img.alicdn.com/imgextra/i1/628189716/TB2Aq2PlcnI8KJjSsziXXb8QpXa_!!628189716.jpg'></image>
+          <!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <!-- 商品参数 -->
+        <view class="spcs">
+          <view class='item'>商品编码：14009789655</view>
+          <view class='item'>储存方式：置于阴凉处</view>
+          <view class='item'>保质期：180天</view>
+          <view class='item'>净含量：208G</view>
+          <view class='item'>包装方式：袋装</view>
+          <view class='item'>产地：中国大陆</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="yhpj">
+          <view class='item'>
+            <view class='linebox'>
+              <view class='head'>
+                <image src='http://img0.imgtn.bdimg.com/it/u=4180413995,1114631528&fm=214&gp=0.jpg'></image>
+                <view class='name'>周**清</view>
+              </view>
+              <view class='star'><image src='/images/star.png'></image><image src='/images/star.png'></image><image src='/images/star.png'></image><image src='/images/star.png'></image><image src='/images/star.png'></image></view>
+            </view>
+            <view class='time'>2017年12月14日 奶油味500g</view>
+            <view class='cont'>店家服务态度很好，还送了小礼物，宝贝很好，超喜欢，物流很快，下次还会光临。</view>
+            <view class='img'>
+              <image src='https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=2622938430292df597c3ab13840a3b5d/b999a9014c086e06af5969e008087bf40bd1cbac.jpg'></image><image src='https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=2622938430292df597c3ab13840a3b5d/b999a9014c086e06af5969e008087bf40bd1cbac.jpg'></image><image src='https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=2622938430292df597c3ab13840a3b5d/b999a9014c086e06af5969e008087bf40bd1cbac.jpg'></image>
+            </view>
+            <view class='replace'>[商家回复]:感谢亲对我们的支持！真的好暖心，我们会女努力做到更好，祝您每天都能拥有阳光般的的好心情，期待您的再次光临，么么哒。</view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="buy">
+    <view class='btnbox'>
+      <view class='kf icon' bindtap='call'>
+        <image src='/images/tel@2x.png'></image>
+        <view>客服</view>
+      </view>
+      <view class='sc icon'>
+        <image src='/images/sc@2x.png'></image>
+        <view>收藏</view>
+      </view>
+    </view>
+    <view class='joincar item' bindtap='chooseType'>加入购物车</view>
+    <view class='nowbuy item' bindtap='chooseType'>立即购买</view>
+  </view>
+  <view class="goodstype mask {{isShow?'active':''}}">
+    <view class='goods_info'>
+      <image src='https://img.alicdn.com/imgextra/i1/628189716/TB2KviRo.lnpuFjSZFjXXXTaVXa_!!628189716.jpg_430x430q90.jpg'></image>
+      <view class='price'>
+        <view class='pr'>￥29.9</view>
+        <view class='kc'>库存 24568 件</view>
+      </view>
+    </view>
+    <view class="typelist">
+      <view class="item">
+        <text class="typename">型号</text>
+        <view class="typeinfo">
+          <text class="ite {{modelactive == item ? 'active':''}}" bindtap="changeModel" wx:for="{{modellist}}" wx:key="{{index}}" data-value="{{item}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="item">
+        <text class="typename">分类</text>
+        <view class="typeinfo">
+          <text class="ite {{typeactive == item ? 'active':''}}" bindtap="changeType" wx:for="{{classifylist}}" wx:key="{{index}}" data-value="{{item}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="item">
+        <text class="typename">数量</text>
+        <view class="number">
+          <text class="jian" bindtap="jianNumber">-</text>
+          <input type="number" bindblur="inputNumber" value="{{num}}"></input>
+          <text class="jia" bindtap="jiaNumber">+</text>
+        </view>
+      </view>
+      <navigator class='btn' bindtap='submit' hover-class='none' url='/pages/confirmOrder/confirmOrder'>确定</navigator>
+    </view> 
+  </view>
+</view>

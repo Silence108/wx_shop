@@ -1,0 +1,24 @@
+<template name="goodsList">
+  <view class='list'>
+    <view class='item'>
+      <navigator hover-class='none' url='/pages/goods_show/goods_show'><image mode='aspectFill' src='https://img.alicdn.com/imgextra/i1/628189716/TB2XGbvoxxmpuFjSZFNXXXrRXXa_!!628189716.jpg'></image>
+      <view class='brief'>【百草味-碧根果218gx2袋】坚果零食干果年货 奶油味长寿果炒货</view></navigator>
+      <view class='prc'><text class='price'>￥56</text><navigator class='num' hover-class='none' open-type='switchTab' url='/pages/shopcar/shopcar'>购</navigator></view>
+    </view>
+    <view class='item'>
+      <navigator hover-class='none' url='/pages/goods_show/goods_show'><image mode='aspectFill' src='https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg'></image>
+      <view class='brief'>流年|原创雾蜡皮手环流年|原创雾蜡皮手环</view></navigator>
+      <view class='prc'><text class='price'>￥56</text><navigator class='num' hover-class='none' open-type='switchTab' url='/pages/shopcar/shopcar'>购</navigator></view>
+    </view>
+    <view class='item'>
+      <navigator hover-class='none' url='/pages/goods_show/goods_show'><image mode='aspectFill' src='https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg'></image>
+      <view class='brief'>流年|原创雾蜡皮手环流年|原创雾蜡皮手环</view></navigator>
+      <view class='prc'><text class='price'>￥56</text><navigator class='num' hover-class='none' open-type='switchTab' url='/pages/shopcar/shopcar'>购</navigator></view>
+    </view>
+    <view class='item'>
+      <navigator hover-class='none' url='/pages/goods_show/goods_show'><image mode='aspectFill' src='https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg'></image>
+      <view class='brief'>流年|原创雾蜡皮手环流年|原创雾蜡皮手环</view></navigator>
+      <view class='prc'><text class='price'>￥56</text><navigator class='num' hover-class='none' open-type='switchTab' url='/pages/shopcar/shopcar'>购</navigator></view>
+    </view>
+  </view>
+</template>

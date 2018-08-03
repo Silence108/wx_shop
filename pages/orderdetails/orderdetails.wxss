@@ -1,0 +1,186 @@
+/* pages/orderdetails/orderdetails.wxss */
+image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.container {
+  background: #f5f5f5;
+}
+/* 订单状态 */
+.statusbg {
+  width: 100%;
+  height: 160rpx;
+  position: relative;
+  z-index: 1;
+}
+.statusbg .icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 24rpx;
+  z-index: 999;
+}
+.statusbg .statu {
+  position: absolute;
+  color: #fff;
+  top: 60rpx;
+  left: 74rpx;
+  font-size: 30rpx;
+}
+/* 订单信息 */
+.container .orderinfo {
+  background: #fff;
+  padding: 24rpx;
+}
+.container .orderinfo .status {
+  font-size: 36rpx;
+  color: #E50112;
+  margin-bottom: 10rpx;
+}
+.container .orderinfo .item {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 50rpx;
+}
+.container .orderinfo .item .name {
+  display: inline-block;
+  color: #999;
+}
+.container .orderinfo .item .value {
+  display: inline-block;
+}
+/* 订单编号 */
+.ordernumber {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #333;
+  padding: 24rpx;
+  background: #fff;
+  width: 100%;
+  border-bottom: #dfdfdf solid 1rpx;
+  margin-top: 20rpx;
+}
+/* 收货地址 */
+.container .address {
+  padding: 24rpx;
+  background: #fff;
+}
+.container .address .addressicon {
+  width: 33rpx;
+  height: 44rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+}
+.container .address .addressinfo .recipient {
+  display: flex;
+  font-size: 28rpx;
+}
+.container .address .addressinfo .recipient .name {
+  margin-right: 20rpx;
+}
+.container .address .addressinfo .addressdetail {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+/* 商品信息 */
+.container .goodsinfo {
+  background: #fff;
+  padding: 24rpx;  
+  display: flex;
+  flex-wrap: wrap;
+  width: 702rpx;
+  justify-content: space-between;
+  border-bottom: #f5f5f5 solid 10rpx;
+}
+.container .goodsinfo .goodsimg {
+  width: 160rpx;
+  height: 160rpx;
+}
+.container .goodsinfo .goodsin {
+  width: 500rpx;
+  font-size: 30rpx;
+  position: relative;
+  height: 160rpx;
+}
+.container .goodsinfo .goodsin .title {
+  width: 500rpx;
+  overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;
+}
+.container .goodsinfo .goodsin .type {
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 10rpx;
+  overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;
+}
+.container .goodsinfo .goodsin .pricenumber {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 500rpx;
+}
+.container .goodsinfo .goodsin .pricenumber .price {
+  color: #D33B27;
+}
+.container .totalprice {
+  background: #fff;
+}
+.container .totalprice .item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 88rpx;
+  font-size: 30rpx;
+  padding: 0 24rpx;
+  border-bottom: #dfdfdf solid 1rpx;
+}
+.container .totalprice .item .name {
+  color: #666;
+}
+.container .totalprice .item .value {
+  color: #999;
+}
+.container .totalprice .item .value.active {
+  color: #D33B27;
+}
+.truepay {
+  font-size: 28rpx;
+  color: #666;
+  padding: 0 24rpx;
+  text-align: right;
+  line-height: 88rpx;
+}
+.truepay text {
+  font-size: 32rpx;
+  color: #D33B27;
+}
+.container .action {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  height: 88rpx;
+  text-align: right;
+}
+.container .action .cancle {
+  display: inline-block;
+  color: #333;
+  border: #666 solid 1rpx;
+  border-radius: 10rpx;
+  padding: 0 14rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  margin-right: 24rpx;
+  margin-top: 16rpx;
+}
+.container .action .nowpay {
+  color: #D33B27;
+  border: #D33B27 solid 1rpx;
+}
